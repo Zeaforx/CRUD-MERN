@@ -9,7 +9,10 @@ const port = process.env.PORT;
 const app = express();
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: [
+      "http://localhost:3000",
+      "https://frontend-eight-omega-70.vercel.app",
+    ],
     // credentials: true, // Allow cookies/tokens
   })
 );
