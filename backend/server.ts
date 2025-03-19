@@ -8,8 +8,8 @@ dotenv.config();
 const port = process.env.PORT;
 const app = express();
 const allowedOrigins = [
-  "http://localhost:3000",
   "https://frontend-eight-omega-70.vercel.app",
+  "http://localhost:3000",
 ];
 app.use(
   cors({
